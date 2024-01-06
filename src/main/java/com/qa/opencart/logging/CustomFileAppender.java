@@ -12,7 +12,7 @@ import org.apache.log4j.spi.LoggingEvent;
  *
  */
 public class CustomFileAppender extends FileAppender {
-
+    /*
 	@Override
 	public void append(LoggingEvent event) {
 		String driverFactoryClassName = event.getMDC("DriverFactory").toString();
@@ -32,4 +32,5 @@ public class CustomFileAppender extends FileAppender {
 		super.append(event);
 
 	}
+	*/
 }

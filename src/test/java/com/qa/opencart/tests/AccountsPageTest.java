@@ -24,7 +24,7 @@ public class AccountsPageTest extends BaseTest {
 
 	@Test()
 	public void accPageTitleTest() {
-        MDC.put("testClassName", this.getClass().getSimpleName());
+       // MDC.put("testClassName", this.getClass().getSimpleName());
        // logger.info("This is a log message from loginTest");
 
 		String actTitle = accPage.getAccPageTitle();
@@ -33,7 +33,7 @@ public class AccountsPageTest extends BaseTest {
 
 	@Test
 	public void accPageURLTest() {
-        MDC.put("testClassName", this.getClass().getSimpleName());
+       // MDC.put("testClassName", this.getClass().getSimpleName());
        // logger.info("This is a log message from accPageURLTest");
 
 		String actURL = accPage.getAccPageURL();
@@ -42,7 +42,7 @@ public class AccountsPageTest extends BaseTest {
 
 	@Test
 	public void isLogoutLinkExistTest() {
-        MDC.put("testClassName", this.getClass().getSimpleName());
+       // MDC.put("testClassName", this.getClass().getSimpleName());
        // logger.info("This is a log message from isLogoutLinkExistTest");
 
 		Assert.assertTrue(accPage.isLogoutLinkExist());
@@ -50,7 +50,7 @@ public class AccountsPageTest extends BaseTest {
 
 	@Test
 	public void accPageHeadersCountTest() {
-        MDC.put("testClassName", this.getClass().getSimpleName());
+       // MDC.put("testClassName", this.getClass().getSimpleName());
         //logger.info("This is a log message from accPageHeadersCountTest");
 
 		List<String> actualAccPageHeadersList = accPage.getAccountsPageHeadersList();
@@ -60,7 +60,7 @@ public class AccountsPageTest extends BaseTest {
 
 	@Test
 	public void accPageHeadersValueTest() {
-        MDC.put("testClassName", this.getClass().getSimpleName());
+       // MDC.put("testClassName", this.getClass().getSimpleName());
        // logger.info("This is a log message from accPageHeadersValueTest");
 
 		List<String> actualAccPageHeadersList = accPage.getAccountsPageHeadersList();
@@ -79,7 +79,7 @@ public class AccountsPageTest extends BaseTest {
 
 	@Test(dataProvider = "getProductData")
 	public void searchProductCountTest(String searchKey) {
-        MDC.put("testClassName", this.getClass().getSimpleName());
+        //MDC.put("testClassName", this.getClass().getSimpleName());
         //logger.info("This is a log message from searchProductCountTest");
 
 		searchPage = accPage.performSearch(searchKey);
@@ -97,7 +97,7 @@ public class AccountsPageTest extends BaseTest {
 
 	@Test(dataProvider = "getProductTestData")
 	public void searchProductTest(String searchKey, String productName) {
-        MDC.put("testClassName", this.getClass().getSimpleName());
+        //MDC.put("testClassName", this.getClass().getSimpleName());
         //logger.info("This is a log message from searchProductTest");
 
 		searchPage = accPage.performSearch(searchKey);
